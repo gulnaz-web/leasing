@@ -1,0 +1,109 @@
+.modal {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 40;
+	background-color: rgba(0, 0, 0, 0.6);
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	color: #000;
+	border-radius: 5px;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+.modal.active {
+	opacity: 1;
+	visibility: visible;
+}
+.modal.active .modal__content {
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	-webkit-transform: translateX(0%);
+	-ms-transform: translateX(0%);
+	transform: translateX(0%);
+}
+.modal__content {
+	position: relative;
+	background-color: #fff;
+	background: url(../img/bg_gray.png);
+	border-radius: 5px;
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	padding: 5px;
+}
+.modal__frame {
+	border: 1px solid #dedada;
+	border-radius: 5px;
+	padding: 50px 150px;
+}
+/* modal close */
+.modal__close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+.modal__icon {
+	width: 36px;
+	height: 36px;
+	-webkit-transition: ease-in-out 0.2s;
+	-o-transition: ease-in-out 0.2s;
+	transition: ease-in-out 0.2s;
+}
+/* modal info */
+.modal__info {
+	max-height: 500px;
+	overflow-y: scroll;
+}
+.modal__info::-webkit-scrollbar {
+	width: 7px;
+	border-radius: 50px;
+	background-color: #b8b8b8;
+}
+.modal__info::-webkit-scrollbar-thumb {
+	background-color: #4d4d4d;
+	border-radius: 50px;
+}
+.modal__title {
+	font-family: 'Russo One', sans-serif;
+	font-size: 24px;
+}
+.modal__list-title {
+	font-size: 20px;
+	font-weight: bolder;
+	margin: 20px 0;
+	line-height: 1.3;
+}
+.modal__list-text {
+	line-height: 1.5;
+	padding: 0 35px;
+}
+.modal__link {
+	text-decoration: underline;
+	transition: ease-in-out 0.1s;
+}
+/* modal hover */
+.modal__icon:hover,
+.modal__link:hover {
+	opacity: 0.7;
+}
+/* modal media */
+@media (max-width: 992px) {
+    .modal__frame {
+        padding: 50px 70px;
+    }
+}
+@media (max-width: 576px) {
+    .modal__frame {
+        padding: 50px 5px;
+    }
+}

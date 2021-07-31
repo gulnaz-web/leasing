@@ -1,0 +1,40 @@
+.partners {
+	color: #1b1b1b;
+}
+/* partners title */
+.partners__title {
+	margin-bottom: 18px;
+}
+.partners__subtitle {
+	margin-bottom: 70px;
+}
+/* partners company */
+.partners__list {
+    display: -ms-grid;
+	display: grid;
+    -webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 10px;
+	-moz-column-gap: 10px;
+	column-gap: 10px;
+	row-gap: 80px;
+    text-align: center;
+}
+/* partners media */
+@media (max-width: 1200px) {
+    .partners__list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width: 768px) {
+    .partners__list {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+@media (max-width: 576px) {
+    .partners__item {
+		max-width: 100%;
+	}
+}

@@ -1,0 +1,122 @@
+.wallform {
+	color: #1b1b1b;
+	position: relative;
+}
+.wallform__content {
+	background: url(../img/png/keys.png) no-repeat 100% 120%, url(../img/bg_gray.png);
+	-webkit-box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+	padding: 5px;
+	border-radius: 5px;
+	margin-top: -10%;
+}
+.wallform__frame {
+	border-radius: 5px;
+	border: 1px solid #dedada;
+	padding: 30px 50px;
+}
+/* walframe title */
+.wallform__title {
+	font-family: 'Russo One', sans-serif;
+	font-size: 36px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.wallform__title span {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	display: block;
+	margin-top: 8px;
+}
+/* walframe fill */
+.wallform__button {
+	margin-bottom: 10px;
+	max-width: 280px;
+	padding: 23px 10px;
+}
+.wallform__politic {
+	font-size: 14px;
+	text-align: center;
+	width: 300px;
+}
+.wallform__link {
+	text-decoration: underline;
+	-webkit-transition: ease-in-out 0.2s;
+	-o-transition: ease-in-out 0.2s;
+	transition: ease-in-out 0.2s;
+}
+/* walframe hover */
+.wallform__link:hover {
+	text-decoration: none;
+	opacity: 0.7;
+}
+/* walframe media */
+@media (max-width: 1200px) {
+	.wallform__input {
+		width: 280px;
+	}
+	.wallform__wrap {
+		text-align: center;
+	}
+}
+@media (max-width: 992px) {
+    .wallform__content {
+		max-width: 450px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.wallform__fill {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.wallform__input {
+		margin-bottom: 40px;
+	}
+}
+@media (max-width: 768px) {
+    .wallform__button {
+		margin-bottom: 10px;
+		max-width: 280px;
+		padding: 23px 10px;
+	}
+}
+@media (max-width: 576px) {
+    .wallform__frame {
+		padding: 30px 20px;
+	}
+	.wallform__title {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+	.wallform__title span {
+		font-size: 14px;
+	}
+	.wallform__content {
+		max-width: 370px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+    .wallform__button {
+		margin-bottom: 10px;
+		max-width: 260px;
+		padding: 23px 10px;
+	}
+	.wallform__fill {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.wallform__input {
+		margin-bottom: 40px;
+		width: 260px;
+	} 
+}
